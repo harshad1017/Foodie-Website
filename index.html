@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web-design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHomepage">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+            <div class='container'>
+                <a class="navbar-brand" href="#"><img
+                        src='https://media-cdn.tripadvisor.com/media/photo-s/11/d2/37/df/munch-cafe-restaurant.jpg'
+                        class='logo-image' onclick="display('sectionHomepage')" /></a>
+                <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active p-2" href="#sectionHomepage" id="navitem"><i class="fas fa-home"></i> Home</i><span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-link p-2" href="#wch-section" id='navitem-1'><i class='fas fa-question-circle'></i> Why Choose US?</a>
+                        <a class="nav-link p-2" href="#Explore-menu-section" id='navitem-2'><i class="fas fa-caret-square-down"></i> Explore Menu</a>
+                        <a class="nav-link p-2" href="#delivery-section" id='navitem-3'><i class="fa-solid fa-truck-fast"></i> Delivery & Payment</a>
+                        <a class="nav-link p-2" href="#followus-section" id='navitem-4'><i class="fas fa-thumbs-up"></i> Follow Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class='banner-section-bgcontainer d-flex flex-column justify-content-center mt-3'>
+            <div class='text-container'>
+                <h1 class='banner-section-mainheading mb-3'> Get Delicious Food Anytime </h1>
+                <p class='banner-section-description mb-3'> Eat Healthy Food </p>
+                <button class='custom-button mb-3'><a class="text" href="#Explore-menu-section">View Menu</a></button>
+                <button class='custom-outline-button'><a class="text" href="#Explore-menu-section">Order Now</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wch-section-container pb-5 pt-5" id="wch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wch-section-container-heading">Why Choose us ?</h1>
+                    <p class="wch-section-container-description">We use both original and classic versions of famous
+                        food items</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wch-card-container p-2 mb-2 shadow">
+                        <img src='https://cdn-icons-png.flaticon.com/512/4483/4483612.png'
+                            class="mt-3 mb-3 image-icon" />
+                        <h1 class="card-heading">Food Service</h1>
+                        <p class="card-description">Savour delicious meals in the warmth of your home with orders that are effectively provided and prepared to serve you with nothing less than perfection.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wch-card-container p-2 mb-2 shadow">
+                        <img src='https://static.thenounproject.com/png/3569374-200.png'
+                            class="mt-3 mb-3 image-icon" />
+                        <h1 class="card-heading">Fresh Food</h1>
+                        <p class="card-description">
+                            To ensure that you always have fresh produce from farm to plate, the Fresh Food group sources its fresh-cut fruits and vegetables directly from our partner farms and farm homes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wch-card-container p-2 mb-2 shadow">
+                        <img src="https://previews.123rf.com/images/mushan/mushan1802/mushan180200037/95915711-best-offer-black-label-icon.jpg"
+                            class="mt-3 mb-3 image-icon"/>
+                        <h1 class="card-heading">Best Offers</h1>
+                        <p class="card-description">
+                            Food Coupons & Offers: Get up to <span class="offers">50% OFF</span> on all online food orders with exclusive promo codes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning mt-3" onclick="display('sectionHomepage')">Go Back</button>
+        </div>
+    </div>
+
+
+
+    <div class="ExploreMenu-container pt-5 pb-5" id="Explore-menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="ExploreMenu-heading">Explore Menu</h1>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="explore-card p-3 mt-3 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPozMS5uvcAto_E-6dby-U8Z9Ob96K0HUkDg&s"
+                            class="image w-100" />
+                        <h1 class="item-heading mt-3">Non-Veg-Starters</h1>
+                        <a href="page1.html" class="item-description">View All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#94942e" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="explore-card p-3 mt-3 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIGvIenniYP3hNB-vFXB_YTSWej-NjmZPisA2otsEzj7VJtdM6ifPmAZLWHQjcWMLKQ0w&usqp=CAU"
+                            class="image w-100" />
+                        <h1 class="item-heading mt-3">Veg Starters</h1>
+                        <a href="page3.html" class="item-description">View All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#94942e" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="explore-card p-3 mt-3 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdHh6mBLZTNhP4sZbVM6ZuOYutGomcItVI3I8HWx1JhIvzG-WLaQHKoSUg4qIdFaZVpg&usqp=CAU"
+                            class="image w-100" />
+                        <h1 class="item-heading mt-3">Soups</h1>
+                        <a href="page4.html" class="item-description">View All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#94942e" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="explore-card p-3 mt-3 shadow">
+                        <img src="https://b.zmtcdn.com/data/pictures/6/19246706/a360b56d00c20f8a8a6a4abc73a8f6f2_featured_v2.jpg"
+                            class="image w-100" />
+                        <h1 class="item-heading mt-3">Fish & Sea food</h1>
+                        <a href="page5.html" class="item-description">View All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#94942e" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="explore-card p-3 mt-3 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSwbxdgMqQBOiWZncbmGIv_pdg2H0Fc7bJAth7gigyLlMf-0Gcuww5dmo5XgyobsjynlU&usqp=CAU"
+                            class="image w-100" />
+                        <h1 class="item-heading mt-3">Main Course</h1>
+                        <a href="page6.html" class="item-description">View All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#94942e" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="explore-card p-3 mt-3 shadow">
+                        <img src="https://recipes.wellcurve.in/wp-content/uploads/2023/03/Hakka-Noodles.jpg"
+                            class="image w-100" />
+                        <h1 class="item-heading mt-3">Noodles</h1>
+                        <a href="page7.html" class="item-description">View All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#94942e" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="healthy-food-container pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwnRi1JEG45V-LclA6kO4yPeWy_FbwhKehTXBiCLqZQfCam-DVsy_NayUen630xOFkfM&usqp=CAU"
+                            class="image-logo mt-2" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="healthy-food-section-heading">
+                        Fresh, Healthy, Organic, Delicious Fruits
+                    </h1>
+                    <p class="healthy-food-section-description">
+                        With our selection of fresh fruits and vegetables, you can completely go organic and say no to toxic chemicals. Treat your senses and your body to the real, pure gifts of mother nature. with the genuine, pure things that nature has to offer.
+                    </p>
+                    <button class="custom-button"><a href="https://www.youtube.com/watch?v=inEPlZZ_SfA&t=8s" target="_blank"><span class="text">Video</span></a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="delivery-And-Payment-Section pt-5 pb-5" id="delivery-section">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12 col-md-5 order-1 order-md-2">
+                    <img src="https://png.pngtree.com/png-clipart/20221224/original/pngtree-transparent-25-off-sale-discount-offer-banner-png-image_8802243.png"
+                        class="image-logo" />
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <h1 class="delivery-heading">
+                        Delivery and Payment
+                    </h1>
+                    <p class="delivery-description">
+                        Take use of the abundance of payment alternatives at your disposal to make payments hassle-free. Get real-time tracking and see the location of your meals on a map. Seeing your food delivered right to your door is a sight to behold. Additionally, every time you pay online for an item, you receive a 5% discount.
+                    </p>
+                    <button class="custom-button">Order Now</button>
+                    <div class="mt-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmZlOfvZ7xaFQTEEgwGRjoRypJO1HpeJSV0Q&s"
+                            class="payment-card-img" />
+                        <img src="https://w7.pngwing.com/pngs/92/785/png-transparent-mastercard-logo-mastercard-credit-card-payment-visa-nyse-ma-mastercard-logo-text-logo-sign.png"
+                            class="payment-card-img" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnaS2yGsFs-KFKyPJYmcc0lWx_S01CI_2RQ&s"
+                            class="payment-card-img" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2fodzjRv1ewftK-w29ns7PCtA26vJkLcXUA&s"
+                            class="payment-card-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="thanking-customers-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-customers-section-heading">
+                        Thank you for being a valuable customer to us.
+                    </h1>
+                    <p class="thanking-customers-section-description">We have a surprise gift for you</p>
+                    <div class="d-md-none">
+                        <img src="https://st2.depositphotos.com/1219867/8235/i/450/depositphotos_82350542-stock-photo-beautiful-gold-present-box-with.jpg"
+                            class="thanking-customers-section-img" />
+                    </div>
+                    <div>
+                        <button class="custom-button">Redeem Gift</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block">
+                    <img src="https://st2.depositphotos.com/1219867/8235/i/450/depositphotos_82350542-stock-photo-beautiful-gold-present-box-with.jpg"
+                        class="thanking-customers-section-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-us-section pt-5 pb-5" id="followus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <h5 class="text-center icon-headings">Twitter</h5>
+                    </div>
+                    <div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <h5 class="text-center icon-headings">Instagram</h5>
+                    </div>
+                    <div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                        <h5 class="text-center icon-headings">Facebook</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/d2/37/df/munch-cafe-restaurant.jpg"
+                        class="logo-image"/>
+                    <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+                    <p class="footer-section-address">123 Madhapur, Hyderabad, India.</p>
+                    <h1 class="footer-section-mail-id">8888 0000 2222</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
